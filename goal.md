@@ -57,7 +57,7 @@
 ## 4. Hero/Banner Section
 
 ### Background & Overlay
-- [ ] Use provided background image
+- [ ] Use provided background image <!-- hero-bg.png -->
 - [ ] Add overlay for text legibility
 
 ### Hero Elements
