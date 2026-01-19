@@ -1,146 +1,51 @@
-## 🌟 WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-002 😎
+# UrbanRoots 🌱
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Theme](https://img.shields.io/badge/Theme-Hydro--Luxe-00f5a0)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+> **Your essential companion for greening the concrete jungle.**
+> *High-tech urban farming, sustainable living, and organic nutrition for the modern city dweller.*
 
 ---
 
-📅 Deadline For 60 marks: 20th January, 2026 (11:59 pm ⏱️)
+## 📖 About The Project
 
-📅 Deadline For 50 marks: 21th January, 2026 (11:59 pm ⏱️)
+**UrbanRoots** is a modern web platform designed to demystify horticulture for city living. Moving away from the rustic aesthetic, UrbanRoots utilizes a **"Hydro-Luxe"** design language—combining deep charcoal interfaces with neon green accents—to reflect the future of agri-tech, hydroponics, and vertical farming.
 
-📅 Deadline For 30 marks: Any time after 21th January.
-
-# TechWave - Podcast Website
-
-## ❓ Common Questions & Answers
-
-**Can I use different images?**
-
-- Yes, you may use any relevant images.
-
-**Can I change the alignment and design freely?**
-
-- No. You must follow the alignment and layout shown in the Figma design.
-
-**Can I change colors?**
-
-- Yes, as long as the colors are relevant and visually consistent.
-
-**Do I need to make the page pixel-perfect?**
-
-- No. You can use your own margin and padding while following the overall structure from Figma.
+This project is a complete conceptual pivot from the "TechWave" podcast template, repurposed into a resource hub for:
+* Vertical Gardening techniques.
+* Zero-waste & Composting strategies.
+* Community Seed Swapping.
+* Data-driven plant care.
 
 ---
 
-## 📌 Assignment Requirements
+## ✨ Key Features
 
-### ✅ Main Requirements (50 Marks)
-
-### Navbar
-
-- **Desktop/Laptop/Large Device:**
-  - Logo on the Left
-  - Menu Items in the Center (like Figma design)
-  - Gradient Button on the Right
-- **Mobile Device:**
-  - Hidden nav items with hamburger menu icon
-  - Fully responsive navigation
-
-### Banner Section
-
-- **Desktop/Laptop/Large Device:**
-  - Background Image
-  - Center-aligned podcast circle view with visual effects
-  - Relevant heading and descriptive text at center
-  - Two call-to-action buttons below the text
-- **Mobile Device:**
-  - Mobile responsive layout matching Figma design
-
-
-### About Section
-
-- **Desktop/Laptop/Large Device:**
-  - Heading with descriptive text at the top
-  - 4 statistics items displayed in a row with proper styling
-- **Mobile Device:**
-  - 4 statistics items responsive layout (2x2 grid stacked on mobile)
-
-### Why Choose Section
-
-- **Desktop/Laptop/Large Device:**
-  - 5 feature cards layout matching Figma design
-  - Each card contains: icon, title, and description
-- **Mobile Device:**
-  - Fully responsive card layout
-  - Single column layout on mobile devices
-
-### Featured Episodes Section
-
-- **Desktop/Laptop/Large Device:**
-  - 3 featured episode cards layout
-  - Each card includes: title, description, and duration
-  - YouTube video links embedded in cards
-- **Mobile Device:**
-  - Responsive card layout for mobile devices
-
-### Footer Section
-
-- **Desktop/Laptop/Large Device:**
-  - Center-aligned layout with brand and platform information
-  - Copyright information with horizontal line separator
-- **Mobile Device:**
-  - Responsive footer layout maintaining readability
+* **🧪 Masterclasses:** High-definition video tutorials with close-up angles of planting techniques.
+* **📱 Garden-Side Mode:** A mobile-first interface designed for outdoor readability while you work in the dirt.
+* **🌍 Seed Swap Network:** Connects users with local growers in over 120 cities to trade cuttings and seeds.
+* **📊 Growth Trackers:** Digital care schedules, watering algorithms, and printable checklists.
+* **🛡️ Bio-Protection:** Guides on pest control using organic oils and natural predators (no harsh chemicals).
 
 ---
 
-## 🚀 CHALLENGES (10 Marks)
+## 🎨 Design System: "Hydro-Luxe"
 
-### Host Section
+The interface uses a high-contrast dark mode with a signature 3-color gradient representing the transition from **Sprout (Green)** to **Water (Blue)** to **Depth (Deep Blue)**.
 
-- **Desktop/Laptop/Large Device:**
-  - Image on the left with host name, biography, and social media icons
-  - Professional layout with proper alignment
-- **Mobile Device:**
-  - Responsive layout with stacked design for mobile view
+### Color Palette
 
-### Additional Challenges
+| Color Name | Hex Code | Usage |
+| :--- | :--- | :--- |
+| **Neon Sprout** | ` #00f5a0 ` | Primary Action / Highlights / The "New" Badge |
+| **Carbon Soil** | ` #0F1115 ` | Global Background (Deep Charcoal) |
+| **Night Moss** | ` #162621 ` | Card Backgrounds / UI Surfaces |
+| **Clean Air** | ` #F5F7FA ` | Primary Text |
 
-- Implement smooth animations on any buttons or sections for enhanced user experience
-- Minimum 5 commits on GitHub with meaningful commit messages
-- No Lorem Ipsum content - use relevant, meaningful text
-- "New" badge in the podcast circle view positioned exactly as per Figma design
+### The "Hydro" Gradient
+Used for primary buttons, borders, and the Hero Circle.
 
----
-
-### Responsive Breakpoints
-
-- **Small device:** up to 576 px 
-- **Medium Device:** 576px to 992 px (Optional)
-- **Large Device:** above 992 px 
-
-
----
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3/Tailwind CSS
-- No JavaScript
-
----
-
-## ✅ Submission Checklist
-
-- Figma layout followed correctly
-- Proper alignment and spacing
-- Clean and readable HTML & CSS
-- Each Section are responsive with proper breakpoints
-- Live site deployed
-- Public GitHub repository
-
----
-
-## 📂 Submission Format
-
-- **GitHub Repository Link**
-- **Live Website Link (GitHub Pages)**
-
----
+```css
+--gradient-hydro: linear-gradient(135deg, #00f5a0 0%, #00D2FF 50%, #3A7BD5 100%);
