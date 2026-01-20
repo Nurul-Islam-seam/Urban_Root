@@ -11,6 +11,7 @@
     
     /* CSS Variables using brand palette */
     --bg-page: var(--carbon-soil);
+    --bg-card: rgba(255, 255, 255, 0.04);
     --text: var(--clean-air);
     --brand: linear-gradient(135deg, var(--neon-sprout), var(--aqua-flow) 55%, var(--deep-current));
     --border: rgba(255, 255, 255, 0.14);
@@ -20,9 +21,12 @@
     --lh-tight: 1.1;
     --lh-normal: 1.6;
     --lh-relaxed: 1.8;
+    --space-sm: 0.6rem;
     --space-md: 1rem;
     --space-lg: 1.5rem;
     --space-xl: 2rem;
+    --radius: 12px;
+    --radius-lg: 18px;
 }
 
 * { box-sizing: border-box; }
@@ -40,7 +44,7 @@ button { font: inherit; border: none; background: none; color: inherit; cursor: 
 
 /* Two-color logo text: Urban (light) + Roots (green accent) */
 .urban { color: var(--text); }
-.roots { color: var(--green-accent); font-weight: 700; }
+.roots { font-weight: 700; background: linear-gradient(135deg, #f38f7e, #2ba84a); -webkit-background-clip: text; color: transparent; }
 
 
 .btn {
@@ -243,7 +247,7 @@ button { font: inherit; border: none; background: none; color: inherit; cursor: 
 /* Why Choose Section */
 .why-choose-section {
     padding: var(--space-xl) 0;
-    background: #151719;
+    background: #061d1c;
 }
 
 .why-choose-section h2 {
@@ -303,10 +307,9 @@ button { font: inherit; border: none; background: none; color: inherit; cursor: 
 
 .feature-card {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border);
     border-radius: 16px;
     padding: var(--space-lg);
-    text-align: center;
+    text-align: left;
     transition: all 300ms ease;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -325,7 +328,7 @@ button { font: inherit; border: none; background: none; color: inherit; cursor: 
     justify-content: center;
     width: 80px;
     height: 80px;
-    margin: 0 auto var(--space-md);
+    margin: 0 0 var(--space-md) 0;
     background: rgba(0, 245, 160, 0.12);
     border-radius: 12px;
     transition: all 300ms ease;
@@ -477,43 +480,259 @@ button { font: inherit; border: none; background: none; color: inherit; cursor: 
     line-height: var(--lh-tight);
 }
 
-.episode-content p {
-    font-size: 0.95rem;
-    color: rgba(245, 247, 250, 0.75);
-    line-height: var(--lh-normal);
-    margin: 0 0 var(--space-md) 0;
+/* Host Section */
+.host-section {
+    padding: 40px 0;
+    background-color: #061d1c;
 }
 
-.episode-meta {
+.host-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.host-card {
+    background: linear-gradient(135deg, #1a3e20 0%, #1b374e 100%);
+    padding: 50px 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 200px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 30px;
 }
 
-.clock-icon {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
+.host-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.duration {
-    font-size: 0.9rem;
-    color: var(--green-accent);
-    font-weight: 600;
+.host-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.host-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.host-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #b0b0d0;
+    margin: 0;
+}
+
+.host-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.host-socials a {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.host-socials a::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--neon-sprout), var(--aqua-flow) 55%, var(--deep-current));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.host-socials a img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.host-socials a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
+}
+
+
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+.site-footer {
+    background-color: #0a0e27;
+    background-image: url('./assets/footer-bg.png');
+    background-repeat: repeat;
+    background-size: 120%;
+    background-position: center;
+    padding: 80px 0 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.site-footer .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-brand {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.footer-brand .urban {
+    color: #ffffff;
+}
+
+.footer-brand .roots {
+    background: linear-gradient(135deg, #f38f7e, #2ba84a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-platforms {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-platforms a {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-platforms a img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-platforms a span {
+    font-size: 13px;
+    color: #a0a0b0;
+    font-weight: 500;
+}
+
+.footer-platforms a:hover {
+    transform: translateY(-6px);
+}
+
+.footer-platforms a:hover img {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(17%) saturate(1036%) hue-rotate(80deg) brightness(96%) contrast(90%);
+}
+
+.footer-platforms a:hover span {
+    color: #4ade80;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #7a7a9e;
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+/* ============================================
+   RESPONSIVE: TABLET (768px - 991px)
+   ============================================ */
+
+@media (max-width: 991px) {
+    .host-card {
+        padding: 25px;
+    }
+
+    .footer-brand {
+        font-size: 44px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE: MOBILE (≤ 576px)
+   ============================================ */
 
 @media (max-width: 576px) {
-    .episodes-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-md);
+    .host-section {
+        padding: 25px 0;
     }
-    
-    .episode-content {
-        padding: var(--space-md);
+
+    .host-section h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
-    
-    .episode-content h3 {
-        font-size: 1.05rem;
+
+    .host-card {
+        padding: 18px;
+    }
+
+    .host-card p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .site-footer {
+        padding: 60px 0 30px;
+    }
+
+    .site-footer .container {
+        gap: 30px;
+    }
+
+    .footer-brand {
+        font-size: 36px;
+    }
+
+    .footer-platforms {
+        gap: 16px;
+    }
+
+    .footer-platforms a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer-platforms a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
     }
 }
 
